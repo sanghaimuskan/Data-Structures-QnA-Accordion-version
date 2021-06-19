@@ -1,21 +1,25 @@
-import React from 'react'
-import Review from './Review';
-import './App.css'
+import React, { useState } from 'react';
+import data from './Data';
+import SingleQuestion from './Question';
+import './App.css';
 
 function App() {
+  const [questions, setQuestion ] = useState(data);
   return (
-<main>
-  <div className = "container" >
-    <div className= 'title'>
-      <h2>Our Reviews </h2>
-      <div className = 'underline'></div>
-    </div>
-    <Review/>
-  </div>
-</main>
-  );
+    <main>
+      <div className ="container">
+          <h3> Questions and answers about data structures</h3>
+          <section className = 'info'>
 
+          {questions.map( (question) =>{
+            return <SingleQuestion key= {question.id} {...question} />}
+            )}
+            
+      </section>
+      </div>
+    </main>
+  
+  )
 }
 
-
-export default App
+export default App;

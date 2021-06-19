@@ -1,40 +1,33 @@
-const reviews = [
+const questions = [
   {
     id: 1,
-    name: 'susan smith',
-    job: 'web developer',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    text:
-      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    title: 'What is Stack and where it can be used? ',
+    info:
+      'Stack is a linear data structure which the order LIFO(Last In First Out) or FILO(First In Last Out) for accessing elements. Basic operations of the stack are: Push, Pop, Peek.',
   },
   {
     id: 2,
-    name: 'anna johnson',
-    job: 'web designer',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg',
-    text:
-      'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+    title: 'Which data structures are used for BFS and DFS of a graph? ',
+    info:
+      'Queue is used for BFS and Stack is used for DFS. DFS can also be implemented using recursion (Note that recursion also uses function call stack).',
   },
   {
     id: 3,
-    name: 'peter jones',
-    job: 'intern',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
-    text:
-      'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+    title: 'Can doubly linked be implemented using a single pointer variable in every node? ',
+    info:
+      'Doubly linked list can be implemented using a single pointer.',
   },
   {
     id: 4,
-    name: 'bill anderson',
-    job: 'the boss',
-    image:
-      'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
-    text:
-      'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+    title: 'How to check if a given Binary Tree is BST or not? ',
+    info:
+      'If inorder traversal of a binary tree is sorted, then the binary tree is BST. The idea is to simply do inorder traversal and while traversing keep track of previous key value. If current key value is greater, then continue, else return false.',
   },
-];
-
-export default reviews;
+  {
+    id: 5,
+    title: 'What are linear and non-linear data Structures? ',
+    info:
+      'Linear: A data structure is said to be linear if its elements form a sequence or a linear list. Examples: Array. Linked List, Stacks and Queues and Non-Linear: A data structure is said to be non-linear if the traversal of nodes is nonlinear in nature. Example: Graph and Trees.',
+  },
+]
+export default questions
